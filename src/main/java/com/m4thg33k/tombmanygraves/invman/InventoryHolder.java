@@ -62,7 +62,7 @@ public class InventoryHolder {
         playerName = player.getName();
         compound.setString(PLAYER_NAME, playerName);
 
-        setTimestamp(new SimpleDateFormat("MM_dd_YYYY_HH_mm_ss").format(new Date()));
+        setTimestamp(new SimpleDateFormat("YYYY-MM-dd'T'HH:mm:ss'Z'").format(new Date()));
     }
     
     public List<ItemStack> getAllItems(){
